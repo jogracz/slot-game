@@ -14,3 +14,7 @@ body {
     rgba(43, 148, 37, 1) 97%
   );
 }
+
+.hello {
+  color: red;
+}
