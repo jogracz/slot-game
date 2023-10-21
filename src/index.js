@@ -1,7 +1,10 @@
 import "./style.css";
 import Card9 from "./assets/9.png";
+import Card9Connect from "./assets/9_connect.png";
+import printMe from "./print";
 
 console.log("Hello JS");
+printMe();
 
 const greeting = "This is typescript!";
 
@@ -28,5 +31,9 @@ function component() {
 const image = document.createElement("img");
 image.setAttribute("src", Card9);
 
+const image2 = new Image();
+image2.src = Card9Connect;
+
 document.body.appendChild(component());
 document.body.appendChild(image);
+document.body.appendChild(image2);
