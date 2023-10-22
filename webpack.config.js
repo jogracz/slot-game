@@ -11,6 +11,10 @@ module.exports = {
   },
   // DEVTOOL
   devtool: "inline-source-map",
+  // DEV SERVER
+  devserver: {
+    static: "./dist",
+  },
   // PLUGINS
   plugins: [new HtmlWebpackPlugin({ title: "Slot Game" })],
   // OTPUT
@@ -31,5 +35,9 @@ module.exports = {
         type: "asset/resource",
       },
     ],
+  },
+  // OPTIMALIZATION
+  optimization: {
+    runtimeChunk: "single",
   },
 };
