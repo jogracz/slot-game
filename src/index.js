@@ -12,11 +12,9 @@ const sayHi = (what) => {
   return `Hello ${what}`;
 };
 
-const rootDiv = document.getElementById("root");
+const rootDiv = document.createElement("div");
 
-const text = document.createTextNode(sayHi(greeting));
-
-rootDiv?.appendChild(text);
+rootDiv.innerHTML = sayHi(greeting);
 
 function component() {
   const element = document.createElement("div");
@@ -34,6 +32,7 @@ image.setAttribute("src", Card9);
 const image2 = new Image();
 image2.src = Card9Connect;
 
+document.body.appendChild(rootDiv);
 document.body.appendChild(component());
 document.body.appendChild(image);
 document.body.appendChild(image2);
