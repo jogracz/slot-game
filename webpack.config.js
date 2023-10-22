@@ -12,7 +12,7 @@ module.exports = {
   // DEVTOOL
   devtool: "inline-source-map",
   // DEV SERVER
-  devserver: {
+  devServer: {
     static: "./dist",
   },
   // PLUGINS
