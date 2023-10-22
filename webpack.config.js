@@ -9,6 +9,8 @@ module.exports = {
     index: "./src/index.js",
     print: "./src/print.js",
   },
+  // DEVTOOL
+  devtool: "inline-source-map",
   // PLUGINS
   plugins: [new HtmlWebpackPlugin({ title: "Slot Game" })],
   // OTPUT
