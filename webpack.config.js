@@ -6,8 +6,7 @@ module.exports = {
   mode: "development",
   // ENTRY
   entry: {
-    index: "./src/index.js",
-    print: "./src/print.js",
+    index: "./src/index.ts",
   },
   // DEVTOOL
   devtool: "inline-source-map",
@@ -34,7 +33,16 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
+      {
+        test: /\.tsx?$/,
+        use: "ts-loader",
+        exclude: /node_modules/,
+      },
     ],
+  },
+  // REXOLVE
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
   },
   // OPTIMALIZATION
   optimization: {

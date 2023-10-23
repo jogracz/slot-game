@@ -1,11 +1,13 @@
+import "./style.css";
+
 const greeting: string = "This is typescript!";
 
 const sayHi = (what: string): string => {
   return `Hello ${what}`;
 };
 
-const rootDiv = document.getElementById("root");
+const rootDiv = document.createElement("div");
 
-const text = document.createTextNode(sayHi(greeting));
+rootDiv.innerHTML = sayHi(greeting);
 
-rootDiv?.appendChild(text);
+document.body.appendChild(rootDiv);
