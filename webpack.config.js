@@ -40,7 +40,7 @@ module.exports = {
       },
     ],
   },
-  // REXOLVE
+  // RESOLVE
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
   },
