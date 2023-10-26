@@ -1,1 +1,1 @@
-## Pixi.js slot game
+## webpack conf
